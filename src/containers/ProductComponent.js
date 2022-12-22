@@ -7,13 +7,13 @@ const ProductComponent = () => {
     const { id, title, image, price, category } = product;
 
     return (
-      <div className='four column wide' key={id}>
+      <div className='four wide column' key={id}>
         <div className='ui link cards'>
-          <div className='image'>
-            <img src={image} alt={title} />
-          </div>
           <div className='card'>
-            <div className='image'></div>
+            <div className='image'>
+              <img src={image} alt={title} />
+            </div>
+
             <div className='content'>
               <div className='header'>{title}</div>
               <div className='meta price'>$ {price}</div>
